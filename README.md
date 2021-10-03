@@ -1,5 +1,5 @@
-# GuessElementGame
-Task Performance Prelims in Programming Languages (3Y1S)
+# Guess Element Console Game
+# Task Performance Prelims in Programming Languages (3Y1S)
 
 This program is a Console Guessing Game/Quiz Game with the mechanics of guessing the Atomic Name of a given Atomic Symbol. <br>
 i.e. H = Hydrogen, He = Helium, Li = Lithium... <br>
