@@ -1,6 +1,6 @@
 import data.chemicalElementsMap
 import model.GameModel
-import model.maxNumberOfElements
+import model.MAX_NO_OF_QUESTIONS
 
 // Author: Edzon Jaeve B. Bausa
 
@@ -59,7 +59,7 @@ private fun onUserInput() {
  * from the [GameModel]
  */
 private fun showScore() {
-    if (gameModel.currentElementCount == maxNumberOfElements) {
+    if (gameModel.currentElementCount == MAX_NO_OF_QUESTIONS) {
         println("Final Score: ${gameModel.score}")
     } else {
         println("Score: ${gameModel.score}")

@@ -3,9 +3,9 @@ package model
 import data.chemicalElementsMap
 
 // Constant values
-const val maxNumberOfElements = 10
-const val increaseScore = 20
-const val decreaseScore = 5
+const val MAX_NO_OF_QUESTIONS = 10
+const val INCREASE_SCORE = 20
+const val DECREASE_SCORE = 5
 
 /**
  * This class contains the game logic and
@@ -64,16 +64,16 @@ class GameModel {
     * and displays a message if the answer is correct.
     */
     private fun increaseScore() {
-        _score += increaseScore
-        println("Correct! +$increaseScore points❤")
+        _score += INCREASE_SCORE
+        println("Correct! +$INCREASE_SCORE points❤")
     }
     /*
     * Increases the game score if the player's word is correct
     * and displays a message if the answer is wrong.
     */
     private fun decreaseScore() {
-        _score -= decreaseScore
-        println("Wrong! -$decreaseScore points :(")
+        _score -= DECREASE_SCORE
+        println("Wrong! -$DECREASE_SCORE points :(")
     }
 
     /**
@@ -91,12 +91,12 @@ class GameModel {
     }
 
     /**
-    * Returns true if the current element count is less than maxNumberOfElements
+    * Returns true if the current element count is less than MAX_NO_OF_QUESTIONS
     * To determine if the game is still ongoing.
     * This is passed to gameStart() function in [Main].
     */
     fun nextElement(): Boolean {
-        return if (_currentElementCount < maxNumberOfElements) {
+        return if (_currentElementCount < MAX_NO_OF_QUESTIONS) {
             getNextElement()
             true
         } else false
