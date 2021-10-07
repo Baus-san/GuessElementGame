@@ -20,7 +20,6 @@ private val gameModel = GameModel()
 fun main(args: Array<String>) {
     println("GUESS ELEMENT CONSOLE GAME")
     gameStart()
-    playAgain()
 }
 
 /**
@@ -32,6 +31,7 @@ private fun gameStart() {
         onUserInput()
         showScore()
     }
+    playAgain()
 }
 
 /**
